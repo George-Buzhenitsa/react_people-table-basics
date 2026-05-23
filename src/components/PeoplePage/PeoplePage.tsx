@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Loader } from '../Loader';
-import { PeopleTable } from '../PeopleTable/PeopleTable';
 import { Person } from '../../types';
 import { getPeople } from '../../api';
+import { PeopleTable } from '../PeopleTable';
 
 export const PeoplePage = () => {
   const [people, setPeople] = useState<Person[]>([]);
